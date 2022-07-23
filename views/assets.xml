@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Account Financial Report Assets -->
+        <template id="account_analytic_report_backend" inherit_id="web.assets_backend" active="True">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/account_analytic_report/static/src/js/mail_activity.js"></script>
+                <script type="text/javascript" src="/account_analytic_report/static/src/js/account_reports.js"></script>
+                <script type="text/javascript" src="/account_analytic_report/static/src/js/action_manager_account_report_dl.js"></script>
+                <link rel="stylesheet" type="text/scss" href="/account_analytic_report/static/src/scss/account_financial_report.scss"/>
+            </xpath>
+        </template>
+
+
+
+        <template id="assets_tests" name="Account Reports Assets Tests" inherit_id="web.assets_tests">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/account_analytic_report/static/tests/tours/account_reports_widgets.js"></script>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
